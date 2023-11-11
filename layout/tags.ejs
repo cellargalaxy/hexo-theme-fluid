@@ -11,6 +11,17 @@ var max_font = theme.tag.tagcloud.max_font || 30
 var unit = theme.tag.tagcloud.unit || 'px'
 var start_color = theme.tag.tagcloud.start_color || '#BBBBEE'
 var end_color = theme.tag.tagcloud.end_color || '#337ab7'
+
+page.subtitle = page.subtitle || page.title
+page.banner_group = page.banner_group || theme.index.banner_group
+if ((page.banner_img === undefined || page.banner_img === null || page.banner_img === '') &&
+        page.banner_group !== undefined && page.banner_group !== null && page.banner_group.length > 0) {
+    var index = page.subtitle.length % page.banner_group.length
+    page.banner_img = page.banner_group[index].img || page.banner_img
+    page.banner_img_height = parseFloat(page.banner_group[index].height || page.banner_img_height)
+    page.banner_mask_alpha = parseFloat(page.banner_group[index].mask_alpha || page.banner_mask_alpha)
+    page.banner_text = page.banner_group[index].text || page.subtitle
+}
 %>
 
 <div class="text-center tagcloud">
