@@ -97,7 +97,6 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    }
 
 
 #---------------------------
