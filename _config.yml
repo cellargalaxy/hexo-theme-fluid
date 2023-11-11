@@ -170,8 +170,8 @@ color:
 
   # 主面板背景色
   # Color of main board
-  board_color: "#fff"
-  board_color_dark: "#252d38"
+  board_color: "#ffffffe6"
+  board_color_dark: "#252d38e6"
 
   # 文章正文字体色
   # Color of post text
@@ -606,10 +606,10 @@ post:
     # If true, only set `category_bar: true` in Front-matter will enable sidebar of category, also set `category_bar: ["CategoryA"]` to specify categories
     specific: true
 
-    # 置于板块的左侧或右侧
+    # 置于板块的左侧或右侧或正文上
     # place in the board
-    # Options: left | right
-    placement: left
+    # Options: left | right | center
+    placement: center
 
     # 文章的排序字段，前面带减号是倒序，不带减号是正序
     # Sort field for posts, with a minus sign is reverse order
@@ -625,10 +625,10 @@ post:
   toc:
     enable: true
 
-    # 置于板块的左侧或右侧
+    # 置于板块的左侧或右侧或正文上
     # place in the board
-    # Options: left | right
-    placement: right
+    # Options: left | right | center
+    placement: center
 
     # 目录会选择这些节点作为标题
     # TOC will select these nodes as headings

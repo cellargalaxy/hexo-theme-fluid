@@ -11,11 +11,12 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
 <body>
   <%- inject_point('bodyBegin') %>
 
+  <div style="background-image: url(https://i.loli.net/2018/08/21/5b7bb5dd4f0df.png);" class="img-back"><div class="scrub">
+
   <header>
     <%- inject_point('header') %>
   </header>
 
-<div style="background-image: url(https://i.loli.net/2018/08/21/5b7bb5dd4f0df.png);" class="img-back"><div class="scrub">
   <main>
     <% if(is_post() || page.layout === '404') { %>
       <%- body %>
@@ -57,11 +58,13 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
       </div>
     <% } %>
   </main>
-</div></div>
+
 
   <footer>
     <%- inject_point('footer') %>
   </footer>
+
+  </div></div>
 
   <!-- Scripts -->
   <%- partial('_partials/scripts.ejs') %>

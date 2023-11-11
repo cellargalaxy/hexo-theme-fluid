@@ -34,6 +34,11 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
                 <% } %>
               </p>
             <% } %>
+            <% if(theme.post.toc.enable && theme.post.toc.placement === 'center' && page.toc !== false){ %>
+              <div style="margin-bottom: 3rem">
+                <%- partial('_partials/post/toc') %>
+              </div>
+            <% } %>
             <% if (page.encrypt === true) { %>
               <%- inject_point('postMarkdownBegin') %>
               <%- page.content %>
