@@ -1,242 +1,138 @@
-+++
-title = 'elements'
-date = '2023-01-03'
-lastmod = ""
-weight = 0
-draft = false
-+++
-
-blog-vue
-
-[![](https://img.shields.io/github/issues/cellargalaxy/blog-vue)](https://github.com/cellargalaxy/blog-vue)
-[![](https://img.shields.io/github/forks/cellargalaxy/blog-vue)](https://github.com/cellargalaxy/blog-vue)
-[![](https://img.shields.io/github/stars/cellargalaxy/blog-vue)](https://github.com/cellargalaxy/blog-vue)
-[![](https://img.shields.io/github/license/cellargalaxy/blog-vue)](https://github.com/cellargalaxy/blog-vue)
-
-<!--more-->
-
-## base
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
+---
+title: markdown样例
+date: 2020-04-22
+math: true
+mermaid: true
+sticky: 100
+category: 主题示例
+tags:
+  - 示例
+  - Fluid
 ---
 
-~~Strikethrough~~
+>欢迎体验 [Fluid](https://github.com/fluid-dev/hexo-theme-fluid) ，这是一款 Material Design 风格的 Hexo 主题，以简约的设计帮助你专注于写作，本篇文章可预览主题的样式及功能。
 
-*This is italic text*
+<!-- more -->
 
-_This is italic text_
+## 文字
 
-**This is bold text**
+文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
 
-__This is bold text__
+### H3 标题
 
-***This is bold italic text***
+#### H4 标题
 
-___This is bold italic text___
+**粗体**
 
-1. ol-1
-1. ol-2
-    1. ol-2-1
-    1. ol-2-2
+_斜体_
 
-- ul-1
-- ul-2
-    - ul-2-1
-    - ul-2-2
+## 代码
 
-+ [X] checkbox-ul-1
-+ [ ] checkbox-ul-2
-    + [X] checkbox-ul-1-1
-    + [ ] checkbox-ul-2-2
+行内代码：`$ hexo new post "My New Post"`
 
-|           | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
-| big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table | big_table |
+代码高亮使用的是 highlight.js，支持 185 种语言和 91 种高亮样式：
 
-> Blockquotes can also be nested
->> by using additional greater-than signs right next to each other
->>> or with spaces between arrows.
-
-## code
-
-Excuting an order:`npm install marked`,Likely to succeed.
-
-```javascript
-function test() {
-    console.log("Hello world!");
-}
-
-var testBox = box();
-testBox.add("jQuery").remove("jQuery");
-```
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <mate charest="utf-8"/>
-    <title>Hello world!</title>
-</head>
-<body>
-<h1>Hello world!</h1>
-</body>
-</html>
-```
-
-```shell
-ls /
-cat /proc/mounts
-cat /proc/1/maps
-apt-get update
-apt-get install tcpdump
-tcpdump
-apt-get install lsof
-lsof
-```
-
-```css
-body {
-    background-color: burlywood;
-}
-
-.black-background-5 {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
-}
+```python
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
 ```
 
 ```go
-func main(){
-    fmt.Println("go")
+type Map struct {
+    mu Mutex
+    read atomic.Value
+    dirty map[interface{}]*entry
+    misses int
 }
 ```
 
-```java
-public void main(String[] args){
-    System.out.println("Hello World");
-}
-```
+## 表格
 
-```json
-{
-  "url": "https://i.loli.net/2018/08/21/5b7bb5dd4f0df.png",
-  "description": "wide image",
-  "type": "wide"
-}
-```
+| Left | Center | Right |
+|:---|:---:|---:|
+| Key 1 | Value 1 | Comment 1 |
+| Key 2 | Value 2 | Comment 2 |
+| Key 3 | Value 3 | Comment 3 |
 
-```markdown
-# Heading 1
+## 列表
 
-[普通链接带标题](http://localhost/ "普通链接带标题")
+### 有序列表
 
-执行命令：`npm install marked`
-```
+Fluid 相较于其他主题的优势：
 
-```sql
-SELECT COUNT(*) AS cpt, MAX(t.pos) AS max_pos
-FROM `my_table`
-LEFT JOIN `other_table` AS t
-WHERE `somecol` IS NOT NULL
-ORDER BY t.other_col DESC
-```
+1. 设计遵循简洁至上，同时具有轻快的体验，和优雅的颜值；
+2. 提供大量定制化配置项，使每个用户使用该主题都能具有独特的样式；
+3. 响应式页面，适配手机、平板等设备；
 
-```yaml
-product: High Heeled "Ruby" Slippers
-description: "Putting on these \"slippers\" is easy."
-address:
-  city: East Centerville
-  street: !!str |
-    123 Tornado Alley
-    Suite 16
-```
+### 无序列表
 
-## mermaid
+Fluid 功能特性：
 
-```goat
-      .               .                .               .--- 1          .-- 1     / 1
-     / \              |                |           .---+            .-+         +
-    /   \         .---+---.         .--+--.        |   '--- 2      |   '-- 2   / \ 2
-   +     +        |       |        |       |    ---+            ---+          +
-  / \   / \     .-+-.   .-+-.     .+.     .+.      |   .--- 3      |   .-- 3   \ / 3
- /   \ /   \    |   |   |   |    |   |   |   |     '---+            '-+         +
- 1   2 3   4    1   2   3   4    1   2   3   4         '--- 4          '-- 4     \ 4
+- 无比详实的[用户文档](https://hexo.fluid-dev.com/docs/)
+- 页面组件懒加载
+- 多种代码高亮方案
+- 多语言配置
+- 内置多款评论插件
+- 内置网页访问统计
+- 内置文章本地搜索
+- 支持暗色模式
+- 支持脚注语法
+- 支持 LaTeX 数学公式
+- 支持 mermaid 流程图
 
+## 图片
+
+![这是图片描述](https://fluid.s3.bitiful.net/bg/post.png?w=1280&fmt=webp)
+
+## LaTex
+
+基于 MathJax 引擎：
+
+$$
+\Gamma _ { \epsilon } ( x ) = [ 1- e ^ { - 2\pi \epsilon } ] ^ { 1- x } \prod _ { n = 0} ^ { \infty } \frac { 1- \operatorname{exp} ( - 2\pi \epsilon ( n + 1) ) } { 1- \operatorname{exp} ( - 2\pi \epsilon ( x + n ) ) }
+$$
+
+$$
+\left( \begin{array} c t ^ { \prime } \\ x ^ { \prime } \\ y ^ { \prime } \\ z ^ { \prime } \end{array} \right) = \left( \begin{array} { c c c c } { \gamma } & { - \gamma \beta } & { 0 } & { 0 } \\ { - \gamma \beta } & { \gamma } & { 0 } & { 0 } \\ { 0 } & { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 0 } & { 1 } \end{array} \right) \left( \begin{array} c t \\ x \\ y \\ z \end{array} \right)
+$$
+
+$$
+6 \mathrm { CO } _ { 2 } + 6 \mathrm { H } _ { 2 } \mathrm { O } \rightarrow \mathrm { C } _ { 6 } \mathrm { H } _ { 12 } \mathrm { O } _ { 6 } + 6 \mathrm { O } _ { 2 }
+$$
+
+## 流程图
+
+基于 mermaid 语法：
+
+```mermaid
+sequenceDiagram
+participant Alice
+participant Bob
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br/>prevail...
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
 ```
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
 
-```mermaid
-stateDiagram-v2
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-```
-
-```mermaid
-flowchart LR
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-pie
-"Dogs" : 386
-"Cats" : 85
-"Rats" : 15
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
 ```
 
 ```mermaid
@@ -256,96 +152,56 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-```mermaid
-sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-    John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-```
+## 内置 Tag 插件
 
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title Adding GANTT diagram functionality to mermaid
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2               :         des4, after des3, 5d
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :1d
-```
+内置了一些 Tag 插件，用于实现 Markdown 不容易生成的样式，具体使用方式请见 [用户指南](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)。
 
-```mermaid
- journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 3: Me
-```
+### 便签
 
-## katex
+{% note primary %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
 
-https://tiddlywiki.com/plugins/tiddlywiki/katex/
+{% note warning %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
 
-Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
+{% note danger %}
+这里可以写文字 或者 `markdown`
+{% endnote %}
 
-$$
-L = \frac{1}{2} \rho v^2 S C_L
-$$
+### 行内标签
 
-$$0.414213562373095048\approx6\*16^{-1}+a\*16^{-2}+0\*16^{-3}+\cdots$$
+{% label primary @行内标签 %} {% label warning @行内标签 %} {% label danger @行内标签 %}
 
-$$
-{CO2 + C -> 2 CO}
-$$
+### 勾选框
 
-$$
-\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}}
-{1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-$$
+{% cb 内置插件，主要是解决一些 Renderer 不支持勾选, true %}
+{% cb 内置插件，主要是解决一些 Renderer 不支持勾选, true, false, false %}
 
-$$
-1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
-\quad\quad \text{for }\lvert q\rvert<1.
-$$
+### 按钮
 
-## picture
+{% btn javascript:;, 支持链接 %}
 
-![0220af6579e287bc](https://s3.bmp.ovh/imgs/2022/03/0220af6579e287bc.png)
-![bf7c85bd106c412b](https://s3.bmp.ovh/imgs/2022/03/bf7c85bd106c412b.jpg)
+### 折叠块
 
-![667fb45e1ad9d8d2](https://s3.bmp.ovh/imgs/2022/03/667fb45e1ad9d8d2.jpg)
+折叠块报错
 
-## youtube
+### 组图
 
-<iframe style="height:500px;width:100%;" src="https://www.youtube.com/embed/Yh2xKRJGff4?si=GRg3ipZU56-Nfphm"></iframe>
+{% gi 5 3-2 %}
+![图1](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+![图2](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+![图3](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+![图4](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+![图5](https://fluid.s3.bitiful.net/hello-fluid/cover.png?w=480&fmt=webp)
+{% endgi %}
 
-## tradingview
+### 脚注
 
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-<script type="text/javascript">
-    new TradingView.widget(
-            {
-                "height": "500px",
-                "width": "100%",
-                "symbol": "NASDAQ:AAPL",
-                "interval": "D",
-                "theme": "dark"
-            }
-    )
-</script>
+以下是脚注演示[^1]：
+
+如果你有 Fluid 主题或 Hexo 博客相关的文章，可以通过 Pull Request 方式投稿[^2]。
+
+[^1]: 脚注演示
+[^2]: 投稿具体详见[https://github.com/fluid-dev/hexo-fluid-blog](https://github.com/fluid-dev/hexo-fluid-blog)

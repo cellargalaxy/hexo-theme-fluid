@@ -1,6 +1,9 @@
 ---
 title: {{ title }}
 date: {{ date }}
-index_img:
+math: true
+mermaid: true
+sticky: 0
+category:
 tags:
 ---
