@@ -97,17 +97,6 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    - { key: 'community', link: '/community/', name: '社群', icon: 'iconfont icon-wechat2-fill' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - {
-      key: '文档',
-      icon: 'iconfont icon-books',
-      link: '#',
-      submenu: [
-      { key: '安装主题', link: 'https://hexo.fluid-dev.com/docs/start/' },
-      { key: '配置指南', link: 'https://hexo.fluid-dev.com/docs/guide/' },
-      { key: '图标用法', link: 'https://hexo.fluid-dev.com/docs/icon/' }
-      ]
     }
 
 
