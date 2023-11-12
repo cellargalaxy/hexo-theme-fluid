@@ -18,7 +18,7 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
   </header>
 
   <main>
-    <div class="scrub" style="padding-bottom:5rem;">
+    <div class="scrub" style="padding-bottom:5rem;min-height: <%- Math.max(100-banner_img_height,0) %>vh;">
 
     <% if(is_post() || page.layout === '404') { %>
       <%- body %>
