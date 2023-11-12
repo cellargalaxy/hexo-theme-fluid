@@ -12,6 +12,7 @@ var unit = theme.tag.tagcloud.unit || 'px'
 var start_color = theme.tag.tagcloud.start_color || '#BBBBEE'
 var end_color = theme.tag.tagcloud.end_color || '#337ab7'
 
+page.banner_group = page.banner_group || theme.tag.banner_group || theme.index.banner_group
 if (Array.isArray(page.banner_group) && page.banner_group.length) {
     var index = (page.subtitle || page.title).length % page.banner_group.length
     page.banner_img = page.banner_group[index].img || page.banner_img

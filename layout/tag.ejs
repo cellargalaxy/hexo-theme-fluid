@@ -8,6 +8,7 @@ page.banner_mask_alpha = theme.tag.banner_mask_alpha
 
 var tag = site.tags.find({name: page.tag}).filter(tag => tag.length).data[0]
 
+page.banner_group = page.banner_group || theme.tag.banner_group || theme.index.banner_group
 if (Array.isArray(page.banner_group) && page.banner_group.length) {
     var index = (page.subtitle || page.title).length % page.banner_group.length
     page.banner_img = page.banner_group[index].img || page.banner_img

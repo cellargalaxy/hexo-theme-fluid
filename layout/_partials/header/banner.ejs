@@ -3,14 +3,6 @@ var banner_img = page.banner_img || theme.index.banner_img
 var banner_img_height = parseFloat(page.banner_img_height || theme.index.banner_img_height)
 var banner_mask_alpha = parseFloat(page.banner_mask_alpha || theme.index.banner_mask_alpha)
 var subtitle = page.subtitle || page.title
-
-if (Array.isArray(page.banner_group) && page.banner_group.length) {
-    var index = (page.subtitle || page.title).length % page.banner_group.length
-    page.banner_img = page.banner_group[index].img || page.banner_img
-    page.banner_img_height = parseFloat(page.banner_group[index].height || page.banner_img_height)
-    page.banner_mask_alpha = parseFloat(page.banner_group[index].mask_alpha || page.banner_mask_alpha)
-    page.banner_text = page.banner_group[index].text || page.subtitle || page.title
-}
 %>
 
 <div id="banner" class="banner" <%- theme.banner && theme.banner.parallax && 'parallax=true' %>

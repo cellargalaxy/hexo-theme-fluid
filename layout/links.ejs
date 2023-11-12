@@ -7,6 +7,7 @@ page.banner_img_height = theme.links.banner_img_height
 page.banner_mask_alpha = theme.links.banner_mask_alpha
 page.comment = theme.links.comments.type
 
+page.banner_group = page.banner_group || theme.links.banner_group || theme.index.banner_group
 if (Array.isArray(page.banner_group) && page.banner_group.length) {
     var index = (page.subtitle || page.title).length % page.banner_group.length
     page.banner_img = page.banner_group[index].img || page.banner_img
