@@ -34,7 +34,7 @@ force_https: false
 
 # 指定自定义 .js 文件路径，支持列表；路径是相对 source 目录，如 /js/custom.js 对应存放目录 source/js/custom.js
 # Specify the path of your custom js file, support list. The path is relative to the source directory, such as `/js/custom.js` corresponding to the directory `source/js/custom.js`
-custom_js: /js/custom.js
+custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
@@ -50,12 +50,7 @@ web_analytics:  # 网页访问统计
   enable: true
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
-  leancloud:
-    app_id: LyT8mpSI2Jq9CRhOtNOgBXkE-9Nh9j0Va
-    app_key: fUOlkXhD9wcmxOTed9NdlqPH
-    # REST API 服务器地址，国际版不填
-    # Only the Chinese mainland users need to set
-    server_url: https://lyt8mpsi.lc-cn-e1-shared.com
+  google: 'G-K3G8VRHCYY'
 
 # 对页面中的图片进行懒加载处理，可见范围外的图片不会加载
 # Lazy loading of images on the page
@@ -97,6 +92,15 @@ navbar:
     - { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' }
     - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
     - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
+    - {
+      key: '文档',
+      icon: 'iconfont icon-books',
+      link: '#',
+      submenu: [
+        { key: '主题', link: 'https://github.com/cellargalaxy/hexo-theme-fluid' },
+      ]
+    }
 
 
 #---------------------------
@@ -109,7 +113,7 @@ footer:
   content: '
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    <a href="https://github.com/cellargalaxy/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
   '
 
   # 展示网站的 PV、UV 统计数
@@ -120,7 +124,7 @@ footer:
     # 统计数据来源，如果使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；如果使用 busuanzi 可能会有请求失败的情况
     # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
     # Options: busuanzi | leancloud
-    source: "leancloud"
+    source: "busuanzi"
 
 
 #---------------------------
@@ -151,7 +155,7 @@ index:
 
     # 为空则按 hexo config.subtitle 显示
     # If empty, text based on `subtitle` in hexo config
-    text: "一款 Material Design 风格的 Hexo 主题"
+    text: ""
 
 
 #---------------------------
@@ -201,7 +205,7 @@ post:
       # 统计数据来源
       # Data Source
       # Options: busuanzi | leancloud
-      source: "leancloud"
+      source: "busuanzi"
 
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
@@ -349,7 +353,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo
-    type: valine
+    type: giscus
 
 
 #---------------------------
@@ -360,22 +364,19 @@ post:
 # Enable comments need to be set `post: comments: enable: true`, then set the corresponding comment plugin parameters below according to `type`
 #---------------------------
 
-# Valine
-# 基于 LeanCloud
-# Based on LeanCloud
-# See: https://valine.js.org/configuration.html
-valine:
-  appid: LyT8mpSI2Jq9CRhOtNOgBXkE-9Nh9j0Va
-  appkey: fUOlkXhD9wcmxOTed9NdlqPH
-  placeholder: 留言仅限讨论，禁止广告等行为
-  path: window.location.pathname
-  avatar: robohash
-  meta: ['nick', 'mail', 'link']
-  pageSize: 10
-  lang: zh-CN
-  highlight: true
-  recordIP: true
-  serverURLs: https://lyt8mpsi.lc-cn-e1-shared.com
+giscus:
+  repo: "cellargalaxy/hexo-theme-fluid"
+  repo-id: "R_kgDOKsDuwg"
+  category: "Announcements"
+  category-id: "DIC_kwDOKsDuws4Ca4rU"
+  mapping: "pathname"
+  strict: "0"
+  reactions-enabled: "1"
+  emit-metadata: "0"
+  input-position: "bottom"
+  theme: "preferred_color_scheme"
+  lang: "zh-CN"
+  crossorigin: "anonymous"
 
 
 #---------------------------
@@ -410,14 +411,12 @@ tag:
 #---------------------------
 about:
   banner_img:
-  avatar: /img/avatar.png
-  name: Fluid
-  introduce: 简洁至上 / 丰富配置 / 充满活力
+  avatar:
+  name:
+  introduce:
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com/fluid-dev/hexo-theme-fluid', tip: 'GitHub' }
-    - { class: 'iconfont icon-note', link: 'https://hexo.fluid-dev.com/docs/', tip: '主题文档' }
 
 
 #---------------------------
