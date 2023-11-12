@@ -1,14 +1,6 @@
 <%
 var banner_img_height = parseFloat(page.banner_img_height || theme.index.banner_img_height)
 var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.default ? theme.dark_mode.default : ''
-
-if (Array.isArray(page.banner_group) && page.banner_group.length) {
-    var index = (page.subtitle || page.title).length % page.banner_group.length
-    page.banner_img = page.banner_group[index].img || page.banner_img
-    page.banner_img_height = parseFloat(page.banner_group[index].height || page.banner_img_height)
-    page.banner_mask_alpha = parseFloat(page.banner_group[index].mask_alpha || page.banner_mask_alpha)
-    page.banner_text = page.banner_group[index].text || page.subtitle || page.title
-}
 %>
 
 <!DOCTYPE html>
@@ -26,7 +18,7 @@ if (Array.isArray(page.banner_group) && page.banner_group.length) {
   </header>
 
   <main>
-    <div class="scrub" style="padding-bottom:5rem;">
+    <div class="scrub" style="padding-bottom:5rem;min-height: <%- Math.max(100-banner_img_height,0) %>vh;">
 
     <% if(is_post() || page.layout === '404') { %>
       <%- body %>
