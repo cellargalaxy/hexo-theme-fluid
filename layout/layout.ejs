@@ -2,7 +2,13 @@
 var banner_img_height = parseFloat(page.banner_img_height || theme.index.banner_img_height)
 var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.default ? theme.dark_mode.default : ''
 
-var banner_img = page.banner_img || theme.index.banner_img
+if (Array.isArray(page.banner_group) && page.banner_group.length) {
+    var index = (page.subtitle || page.title).length % page.banner_group.length
+    page.banner_img = page.banner_group[index].img || page.banner_img
+    page.banner_img_height = parseFloat(page.banner_group[index].height || page.banner_img_height)
+    page.banner_mask_alpha = parseFloat(page.banner_group[index].mask_alpha || page.banner_mask_alpha)
+    page.banner_text = page.banner_group[index].text || page.subtitle || page.title
+}
 %>
 
 <!DOCTYPE html>
@@ -13,7 +19,7 @@ var banner_img = page.banner_img || theme.index.banner_img
 <body>
   <%- inject_point('bodyBegin') %>
 
-  <div style="background-image: url('<%- url_for(banner_img) %>')" class="img-back">
+  <div style="background-image: url('<%- url_for(page.banner_img) %>')" class="img-back">
 
   <header>
     <%- inject_point('header') %>
