@@ -10,3 +10,4 @@ public/
 yarn.lock
 package-lock.json
 *.lock
+db.json
