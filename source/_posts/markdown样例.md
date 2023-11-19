@@ -29,14 +29,6 @@ tags:
 
 ###### Heading 6
 
-This is an H1
-=============
-
-This is an H2
--------------
-
----
-
 文章大部分使用的是 github-markdown 样式，并加入了一些 Material 风格。
 上标：X<sub>2</sub>，下标：O<sup>2</sup>
 
@@ -287,7 +279,21 @@ Class08 <--> C2: Cool label
 
 ### 折叠块
 
-折叠块报错
+{% fold @折叠块的标题 %}
+折叠内容，可以写文字 或者 `markdown`
+{% endfold %}
+
+{% fold info @折叠代码块 %}
+```python
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
+```
+{% endfold %}
 
 ### 组图
 
